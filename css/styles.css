@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: #082b59;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.5rem;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 1.5rem;
+  font-weight:lighter;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin: 1rem;
+}
+
+.logo img {
+  width: 12rem;
+}
+
+nav li {
+  margin: 1rem;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: #f2f2f2;
+}
+
+nav a:hover {
+  color: #d98555; 
+}
+
+span {
+  margin-right: 0.2rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-top: 0.8rem solid #d98555;
+  position: relative;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 8rem 6rem 4rem;
+}
+
+article {
+  margin-right: 1rem;
+  color: #131d26;
+}
+
+article h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+article p {
+  font-size: 1.2rem;
+  line-height: 2;
+  margin-bottom: 2rem;
+}
+
+article a {
+  color: #59331d;
+  text-decoration: underline;
+}
+
+.button {
+  color: #f2f2f2;
+  text-decoration: none;
+  background-color: #59331d;
+  font-size: 1rem;
+  padding: 1.1rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #d98555;
+  color: #59331d;
+}
+
+.coffee-beans {
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+.coffee-beans img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+}
+
+.pouring-coffee img {
+  border-radius: 0.5rem;
+  max-width: 500px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  line-height: 2;
+  background-color: #082b59;
+  color: #f2f2f2;
+  padding: 1rem;
+  padding-bottom: 2rem;
+}
+
+.copyright {
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #f2f2f2;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+}
+
+@media (max-width: 992px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin: 1rem 0;
+  }
+}
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+  }
+
+  .main-content {
+      flex-direction: column;
+  }
+
+  .pouring-coffee img{
+      margin: 0;
+      padding: 0;
+      margin-top: 2rem;
+      width: 400px;
+      height: auto;
+  }
+}

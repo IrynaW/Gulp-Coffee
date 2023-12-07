@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    line-height: 1.5;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: #082b59;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1.5rem;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 1.5rem;
+    font-weight:lighter;
+  }
+  
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 1rem;
+  }
+  
+  .logo img {
+    width: 12rem;
+  }
+  
+  nav li {
+    margin: 1rem;
+  }
+  
+  nav a {
+    display: block;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: #f2f2f2;
+  }
+  
+  nav a:hover {
+    color: #d98555; 
+  }
+  
+  span {
+    margin-right: 0.2rem;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    border-top: 0.8rem solid #d98555;
+    width: 100%;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url("../media/images/gulp-drinking-coffee.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    background-repeat: no-repeat;
+    padding: 2rem 3rem;
+    max-width: 100%;
+  }
+  
+  .banner-text {
+    color: #f2f2f2;
+    max-width: 600px;
+    height: auto;
+    background-color: rgba(16, 14, 14, 0.5);
+    border-radius: 0.5rem;
+    padding: 2rem;
+  }
+
+  article h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+    padding-right: 3rem;
+    color:#d98555;
+  }
+
+  .paragraphs {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin: 2rem 0.5rem;
+    min-height: 100px;
+  }
+
+  .gulp-drinking-coffee {
+    border-radius: 0.5rem;
+  }
+
+  .button {
+    color: #f2f2f2;
+    text-decoration: none;
+    background-color: #59331d;
+    font-size: 1rem;
+    padding: 1.1rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #d98555;
+    color: #59331d;
+  }
+
+  .coffee-beans {
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 300px;
+    overflow: hidden;
+  }
+  
+  .coffee-beans img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    line-height: 2;
+    background-color: #082b59;
+    color: #f2f2f2;
+    padding: 1rem;
+    padding-bottom: 2rem;
+  }
+  
+  .copyright {
+    font-size: 1.2rem;
+    font-weight: 200;
+  }
+  
+  .socials a {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+  }
+
+  @media (max-width: 992px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .logo {
+        margin: 1rem 0;
+      }
+  }
+
+  @media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    main {
+        align-items: center;
+    }
+
+    .main-content {
+      min-height: 800px;
+    }
+
+    .banner-text {
+        flex-direction: column;
+        padding: 0 1rem;
+        height: auto;
+        min-height: 400px;
+        padding: 2rem;
+    }
+  }
